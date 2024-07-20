@@ -1,0 +1,30 @@
+<!--carlos sanchez 20220465-->
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seleccione su partido</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+        <ion-row class="box-logos">
+
+          <ion-button class="logo" fill="clear" (click)="cambiarTema('prm')">
+            <img src="assets/media/img/prm.png" class="logo-img" alt="Prm">
+          </ion-button>
+
+          <ion-button class="logo" fill="clear" (click)="cambiarTema('pld')">
+            <img src="assets/media/img/pld.jpg" class="logo-img" alt="Pld">
+          </ion-button>
+
+          <ion-button class="logo" fill="clear" (click)="cambiarTema('fp')">
+            <img src="assets/media/img/fp.jpg" class="logo-img" alt="fp">
+          </ion-button>
+          
+        </ion-row>
+    </ion-card-content>
+
+    <ion-footer>
+      <ion-button expand="block" color="primary" [disabled]="theme == ''" (click)="registrarse()">Seleccionar</ion-button>
+    </ion-footer>
+  </ion-card>
+</ion-content>
